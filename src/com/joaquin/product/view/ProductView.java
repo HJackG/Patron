@@ -1,19 +1,19 @@
 package com.joaquin.product.view;
 
-import com.joaquin.product.model.entities.producto;
+import com.joaquin.product.model.entities.Producto;
 
 import java.util.Scanner;
 
 public class ProductView {
 
-    public void viewProduct(producto pro)
+    public void viewProduct(Producto pro)
     {
         System.out.println("nombre " + pro.getNameProduct());//Get para mostrar el producto
         System.out.println("id " + pro.getId());
 
     }
 
-    public producto creatProducto()
+    public Producto creatProducto()
     {
         Scanner in =new Scanner(System.in);
 
@@ -25,7 +25,7 @@ public class ProductView {
         System.out.println("Ingrese nombre");
         String nombre = in.nextLine();
 
-        return new producto(id,nombre);//producto newpro = new producto(id,nombre);//Es lo mismo
+        return new Producto(id,nombre);//producto newpro = new producto(id,nombre);//Es lo mismo
 
     }
 }

@@ -1,7 +1,7 @@
 package com.joaquin.product.control;
 
 import com.joaquin.product.model.repositories.ProductRepository;
-import com.joaquin.product.model.entities.producto;
+import com.joaquin.product.model.entities.Producto;
 
 import com.joaquin.product.view.ProductView;
 
@@ -18,7 +18,7 @@ public class ProductController {
     public void createProduct()
     {
         //crear producto
-        producto pro =  this.productView.creatProducto();
+        Producto pro =  this.productView.creatProducto();
 
         //guardar producto
         this.productRepository.addListProduct(pro);

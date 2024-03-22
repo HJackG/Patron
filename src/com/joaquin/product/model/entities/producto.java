@@ -1,11 +1,11 @@
 package com.joaquin.product.model.entities;
 
-public class producto {
+public class Producto {
 
     private  Integer id;
     private String nameProduct;
 
-    public producto(Integer id, String nameProduct) {
+    public Producto(Integer id, String nameProduct) {
         this.id = id;
         this.nameProduct = nameProduct;
     }

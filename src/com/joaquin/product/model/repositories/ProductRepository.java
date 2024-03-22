@@ -1,18 +1,18 @@
 package com.joaquin.product.model.repositories;
 
 import java.util.ArrayList;
-import com.joaquin.product.model.entities.producto;
+import com.joaquin.product.model.entities.Producto;
 
 public class ProductRepository {
 
-    private ArrayList<producto> listProduct;
+    private ArrayList<Producto> listProduct;
 
 
     public ProductRepository() {
         this.listProduct = new ArrayList<>();
     }
 
-    public void addListProduct(producto pro)
+    public void addListProduct(Producto pro)
     {
         this.listProduct.add(pro);
     }
